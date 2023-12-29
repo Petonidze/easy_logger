@@ -3,6 +3,15 @@ This logger is easier to use than the standard one, since it will already be con
 The settings can be used by default from DefaultLoggerSettings, or your own. 
 Thanks to the formatter, the output to the console will be more attractive.
 
+
+Example of usage:
+```
+from logger import logger
+
+logger.info('Hello, world!')
+```
+
+
 What settings can be customized:
 1) TO_FILE - writing to file
 2) TO_CONSOLE - writing to console
@@ -13,3 +22,8 @@ What settings can be customized:
 7) MAX_FILE_SIZE - max log file size in bytes 
 8) BACKUP_COUNT - count of log files
 9) FORMAT - for more details about customizing: https://docs.python.org/3/library/logging.html#formatter-objects
+
+
+Please define DEBUG variable in .env or in common.settings.
+
+Have a nice day!
